@@ -1,3 +1,43 @@
-# csv
+# ── Original PNAS datasets are tracked in Git and must never be ignored ──
+!/data/train_data.npz
+!/data/test_data.npz
+
+# Derived CSV exports of the npz datasets (regenerable, large)
 /data/test_data.csv
 /data/train_data.csv
+
+# Generated structural feature caches
+/cache/
+*.shard*.npz
+
+# Training artefacts
+/checkpoints/
+/outputs/
+/runs/
+/results/
+*.pt
+*.ckpt
+
+# Logs
+*.log
+/logs/
+slurm-*.out
+slurm-*.err
+
+# ViennaRNA scratch output
+*_lunp
+*_dp.ps
+*.ps
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
